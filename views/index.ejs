@@ -1,0 +1,71 @@
+<%- include("partials/header.ejs") %>
+<div class="title">
+<h1>So Clover</h1>
+</div>
+<div class="game-board-container">
+<div class="game-board">
+    <div class="top-input">
+        <input id="" class="top-input input-section" type="text">
+    </div>
+    <div class="bot-input">
+        <input id="" class="bot-inputs input-section" type="text">
+
+    </div>
+    <div class="left-input">
+        <input id="" class="top-input input-section" type="text">
+
+    </div>
+    <div class="right-input">
+        <input id="" class="top-input input-section" type="text">
+    </div>
+
+<div draggable="true" id="card-1" class="card-slot top left">
+<div id="c1-1" class="word top-word">Testing</div>
+<div id="c1-2" class="word bottom-word">Testing</div>
+<div id="c1-3" class="word left-word">Testing</div>
+<div id="c1-4" class="word right-word">Testing</div>
+<div class="nub"></div>
+</div>
+
+ <div draggable="true" id="card-2" class="card-slot top right">
+    <div id="c2-1" class="word top-word">Testing</div>
+    <div id="c2-2" class="word bottom-word">Testing</div>
+    <div id="c2-3" class="word left-word">Testing</div>
+    <div id="c2-4" class="word right-word">Testing</div>
+    <div class="nub"></div>
+ </div>
+
+ <div draggable="true" id="card-3" class="card-slot bot left">
+    <div id="c3-1" class="word top-word">Testing</div>
+    <div id="c3-2" class="word bottom-word">Testing</div>
+    <div id="c3-3" class="word left-word">Testing</div>
+    <div id="c3-4" class="word right-word">Testing</div>
+    <div class="nub"></div>
+ </div>
+
+ <div draggable="true" id="card-4" class="card-slot bot right">
+    <div id="c4-1" class="word top-word">Testing</div>
+    <div id="c4-2" class="word bottom-word">Testing</div>
+    <div id="c4-3" class="word left-word">Testing</div>
+    <div id="c4-4" class="word right-word">Testing</div>
+    <div class="nub"></div>
+ </div>
+ <!-- bottom left buttons -->
+ <button id="turn-bot-left-tleft" class="turn left-pos turn-left">Rotate Left</button>
+ <button id="turn-bot-left-tright" class="turn left-pos turn-right">Rotate Right</button>
+ <!-- bottom right buttons -->
+ <button id="turn-bot-right-tright" class="turn right-pos turn-right">Rotate Right</button>
+ <button id="turn-bot-right-tleft" class="turn right-pos turn-left">Rotate Left</button>
+ <!-- top left buttons -->
+ <button id="turn-top-left-tleft" class="turn turn-left turn-top left-pos">Rotate Left</button>
+ <button id="turn-top-left-tright" class="turn turn-right turn-top left-pos">Rotate Right</button>
+ <!-- top right buttons -->
+ <button id="turn-top-right-tright" class="turn right-pos turn-right turn-top">Rotate Right</button>
+ <button id="turn-top-right-tleft" class="turn right-pos turn-left turn-top">Rotate Left</button>
+
+</div>
+
+</div>
+<!-- THIS IS THE YELLOW BLOCK CONTAINING THE SVG ELEMENTS -->
+
+<%- include("partials/footer.ejs") %> 

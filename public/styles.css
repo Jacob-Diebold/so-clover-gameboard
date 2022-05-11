@@ -1,0 +1,208 @@
+body {
+    background-color: rgb(78, 148, 79);
+}
+.title {
+    text-align: center;
+}
+
+.game-board-container {
+    height: 700px;
+    width: 700px;
+    background-color: rgb(131, 189, 117);
+    text-align: center;
+    margin: auto;
+    border-radius: 7%;
+    
+}
+.game-board {
+    height: 700px;
+    width: 700px;
+    background-color: rgb(131, 189, 117);
+    text-align: center;
+    margin: auto;
+    border-radius: 7%;
+    border-style: none ;
+    border-bottom: solid;
+    border-width: 2px;
+
+    
+    
+}
+
+.top-input {
+    height: 100px;
+    width: 500px;
+    background-color: rgb(131, 189, 117);
+    position: absolute;
+    margin-left: 100px;
+    /* border-style: solid; */
+}
+.bot-input {
+    height: 100px;
+    width: 500px;
+    background-color: rgb(131, 189, 117);
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 598px;
+    /* margin-top: 299px; */
+    border-style: none ;
+    border-bottom: solid;
+    border-width: 2px;
+}
+.bot-inputs {
+    height: 100px;
+    width: 500px;
+    background-color: rgb(131, 189, 117);
+    border-style: none ;
+    border-bottom: solid;
+    border-width: 2px;
+}
+.left-input {
+    height: 100px;
+    width: 500px;
+    background-color: rgb(131, 189, 117);
+    position: absolute;
+    transform: rotate(-90deg);
+    margin-top: 300px;
+    margin-left: -200px;
+    /* border-style: solid; */
+}
+.right-input {
+    height: 100px;
+    width: 500px;
+    background-color: rgb(131, 189, 117);
+    position: absolute;
+    transform: rotate(90deg);
+    margin-top: 300px;
+    margin-left: 400px;
+    /* border-style: solid; */
+}
+.card-slot {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    background-color: rgb(233, 239, 192);
+    border-radius: 25%;
+    border-style: solid;
+    border-width: 1px;
+    cursor: move;
+}
+
+.top {
+    margin-top: 100px;    
+}
+.bot {
+    margin-top: 350px;
+}    
+.left {
+    margin-left: 100px;
+}    
+.right {
+    margin-left: 350px;
+}
+    
+.word {
+    position: absolute;
+    /* border-style: solid; */
+    width: 170px;
+    height: 40px;
+    margin-left:40px;
+    
+}
+.top-word {
+    transform: translateY(25%);
+}
+.bottom-word {
+    margin-top: 210px;
+}
+.left-word {
+    transform: rotate(-90deg) translate(0,25%);
+    margin-top: 105px ;
+    margin-left: -65px;
+    
+}
+.right-word {
+    transform: rotate(90deg) translate(0,25%);
+    margin-top: 105px ;
+    margin-left: 145px;
+}
+.nub {
+    background-color: rgb(131, 189, 117);
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    margin-top: 59px;
+    margin-left: 59px;
+    border-radius: 25%;
+    border-style: solid;
+    border-width: 1px;
+}
+.input-section {
+    position: relative;
+    margin-left: 0;
+    text-align: center;
+    font-size: 2.5rem;
+    border-style: none;
+    
+    
+}
+
+.turn {
+    position:absolute;
+    width: 75px ;
+    height: 75px ;
+    margin-top: 608px;
+    text-align: center;
+    border-radius: 25%;
+    background-color: rgb(233, 239, 192);
+}
+
+.turn-top {
+    margin-top:15px;
+}
+.left-pos {
+    margin-left: -335px;
+    
+}
+.right-pos {
+    margin-left: 260px;
+}
+
+/* Bottom left buttons */
+#turn-bot-left-tleft {
+    visibility: visible;
+}
+#turn-bot-left-tright {
+    visibility: hidden;
+    transform: rotate(90deg)
+}
+/* Bottom right buttons */
+#turn-bot-right-tright {
+    visibility: visible;
+}
+#turn-bot-right-tleft {
+    visibility: hidden;
+    transform:rotate(-90deg)
+}
+/* Top Left buttons */
+#turn-top-left-tleft {
+    visibility: hidden;
+    transform: rotate(90deg)
+}
+#turn-top-left-tright {
+    visibility: hidden;
+    transform:rotate(180deg)
+}
+/* Top right buttons */
+#turn-top-right-tright {
+    visibility: hidden;
+    transform:rotate(-90deg)
+}
+#turn-top-right-tleft {
+    visibility: hidden;
+    transform:rotate(180deg)
+}
+
+.box.over {
+    border: 3px dotted #666;
+  }
